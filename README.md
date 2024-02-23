@@ -63,8 +63,8 @@ When starting the Smocker container, you can pass options in a variadic way to c
 If you need to set a different Smocker Docker image, you can use `testcontainers.WithImage` with a valid Docker image
 for Smocker. E.g. `testcontainers.WithImage("thiht/smocker:0.18.5")`.
 
-You can use the standar testcontainers-go functional options to define your
-container, like `WithEnv`, `WithImage`, or `WithLogConsumers`.
+You can use the standar testcontainers-go functional options that you can find here:
+[https://golang.testcontainers.org/features/common_functional_options/](https://golang.testcontainers.org/features/common_functional_options/).
 
 ### Container Methods
 
