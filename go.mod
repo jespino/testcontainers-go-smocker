@@ -1,4 +1,4 @@
-module github.com/testcontainers/testcontainers-go/modules/smocker
+module github.com/jespino/testcontainers-go-smocker
 
 go 1.20
 

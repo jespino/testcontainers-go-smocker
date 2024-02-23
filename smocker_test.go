@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
+	smocker "github.com/jespino/testcontainers-go-smocker"
 	"github.com/testcontainers/testcontainers-go"
-	"github.com/testcontainers/testcontainers-go/modules/smocker"
 )
 
 func TestSmocker(t *testing.T) {
