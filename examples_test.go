@@ -10,7 +10,6 @@ import (
 )
 
 func ExampleRunContainer() {
-	// runSmockerContainer {
 	ctx := context.Background()
 
 	smockerContainer, err := smocker.RunContainer(ctx, testcontainers.WithImage("thiht/smocker:0.18.5"))
@@ -24,7 +23,6 @@ func ExampleRunContainer() {
 			log.Fatalf("failed to terminate container: %s", err)
 		}
 	}()
-	// }
 
 	state, err := smockerContainer.State(ctx)
 	if err != nil {

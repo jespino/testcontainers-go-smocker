@@ -15,6 +15,18 @@ go get github.com/jespino/testcontainers-go-smocker
 ## Usage example
 
 ```go
+package sample
+
+import (
+	"context"
+	"fmt"
+	"log"
+
+	smocker "github.com/jespino/testcontainers-go-smocker"
+	"github.com/testcontainers/testcontainers-go"
+)
+
+func TestSample() {
 	ctx := context.Background()
 
 	smockerContainer, err := smocker.RunContainer(ctx, testcontainers.WithImage("thiht/smocker:0.18.5"))
@@ -28,6 +40,7 @@ go get github.com/jespino/testcontainers-go-smocker
 			log.Fatalf("failed to terminate container: %s", err)
 		}
 	}()
+}
 ```
 
 ## Module reference
